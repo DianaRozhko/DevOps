@@ -1,6 +1,7 @@
 #include "func.h"
 #include <cmath>
 
+
 double Func::FuncA(double x, int n) {
 	double sum=0;
 	for (int i=0; i<n; ++i) {

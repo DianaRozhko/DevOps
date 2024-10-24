@@ -1,11 +1,12 @@
 #ifndef FUNC_H
 #define FUNC_H
-
-cklass Func {
+//Declaration of the Func class
+class Func {
 public:
-	double FuncA();
+	double FuncA(); //Declaration of the public function
 };
 
-#endif
+#endif //end of the conditional inclusion
+       //
 
 
