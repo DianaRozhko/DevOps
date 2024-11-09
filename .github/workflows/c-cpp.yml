@@ -1,0 +1,25 @@
+name: Build
+
+on:
+  push:
+    branches: [ "branchMake" ]
+  pull_request:
+    branches: [ "branchMake" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+  steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up C++ environment
+      uses: actions/setup-cpp@v1
+      with:
+        compiler: g++
+
+    - name: Build with Makefile
+      run: |
+        make
